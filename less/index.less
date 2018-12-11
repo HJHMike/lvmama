@@ -1,0 +1,158 @@
+@import './base.less';
+// 头部区域
+#header{
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    padding: 0.07rem 0;
+    .location{
+        display: block;
+        color: @main-color;
+        width: 0.5rem;
+        text-align: center;
+        font-size: 0.14rem;
+    }
+    .header-title{
+        flex: 1;
+        text-align: center;
+        font-size: 0.14rem;
+    }
+    .icon{
+        display: block;
+        width: 0.34rem;
+        background: url('../images/icon/my.png') no-repeat;
+        background-size:  0.25rem 0.25rem;
+        background-origin: content-box;
+        background-clip: content-box;
+    }
+}
+
+// 轮播图区域
+#slide{
+    width: 100vw;
+    padding-top: 0.35rem;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .swiper-pagination{
+        bottom: 0;
+        .swiper-pagination-bullet-active{
+            background-color: #fff;
+        }
+    }
+}
+
+// 导航区域
+#nav{
+    padding-top: 0.04rem;
+    >ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 1.21rem;
+        >li{
+            width: 33.33vw;
+            padding: 0.04rem;
+            >a{
+                >img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 主体区域
+#main{
+    padding-top: 0.04rem;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 25vw;
+            a{
+                img{
+                    width: 100%;
+                    
+                }
+                
+            }
+        }
+    }
+}
+
+// 活动区域
+#activity{
+    display: flex;
+    padding-top: 0.07rem;
+    .activity-left{
+        width: 50vw;
+        >a{
+            display: block;
+            >img{
+                width: 100%;
+            }
+        }
+    }
+    .activity-right{
+        width: 50vw;
+        >a{
+            display: block;
+            >img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// 热门活动
+#hot-activity{
+    background-color: #f7f7f7;
+    padding-top: 0.14rem;
+    span{
+        padding-left: 0.08rem;
+        font-size: 0.08rem;
+    }
+    a{
+        display: block;
+        width: 100vw;
+        img{
+            width: 100%;
+        }
+        &:last-child{
+            padding-bottom: 0.07rem;
+        }
+    }
+}
+
+#content{
+    .content-title{
+        ul{
+            display: flex;
+            li{
+                width: 50vw;
+                text-align: center;
+                a{
+                    font-size: 0.08rem;
+                    &.active{
+                        color:@main-color;
+                    }
+                }
+            }
+        }
+    }
+    .content-box{
+        >div{
+            padding-top: 0.1rem;
+            >img{
+                width: 100vw;
+            }
+            >span{
+                display: block;
+                background-color: #fff;
+            }
+        }
+    }
+}
